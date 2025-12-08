@@ -160,40 +160,42 @@ async function attemptConvertPath (inputFile, path) {
 
 async function buildConvertPath (file, target, queue) {
 
-  const path = queue.shift();
-  if (path.length > 5) return null;
+  while (queue.length > 0) {
+    const path = queue.shift();
+    if (path.length > 5) continue;
 
-  console.log("Trying", path.map(c => c.format.mime));
+    popupBox.innerHTML = `<h2>Finding conversion route...</h2>
+      <p>Trying ${path.map(c => c.format.format).join(" -> ")} -> ${target.format.format}</p>`;
 
-  const previous = path[path.length - 1];
+    const previous = path[path.length - 1];
 
-  // Check if the target supports parsing *from* the previous node's format
-  if (target.handler.supportedFormats.some(c => c.mime === previous.format.mime && c.from)) {
-    path.push(target);
-    const attempt = await attemptConvertPath(file, path);
-    if (attempt) return attempt;
-  }
+    // Check if the target supports parsing *from* the previous node's format
+    if (target.handler.supportedFormats.some(c => c.mime === previous.format.mime && c.from)) {
+      const attempt = await attemptConvertPath(file, path.concat(target));
+      if (attempt) return attempt;
+    }
 
-  // Get handlers that support *taking in* the previous format
-  // Note that this will of course exclude the target handler
-  const validHandlers = handlers.filter(handler => (
-    handler.supportedFormats.some(format => (
-      format.mime === previous.format.mime &&
-      format.from
-    ))
-  ));
+    // Get handlers that support *taking in* the previous format
+    // Note that this will of course exclude the target handler
+    const validHandlers = handlers.filter(handler => (
+      handler.supportedFormats.some(format => (
+        format.mime === previous.format.mime &&
+        format.from
+      ))
+    ));
 
-  // Look for untested mime types among valid handlers and recurse
-  for (const handler of validHandlers) {
-    for (const format of handler.supportedFormats) {
-      if (!format.to) continue;
-      if (!format.mime) continue;
-      if (path.some(c => c.format === format)) continue;
-      queue.push(path.concat({ format, handler }));
+    // Look for untested mime types among valid handlers and add to queue
+    for (const handler of validHandlers) {
+      for (const format of handler.supportedFormats) {
+        if (!format.to) continue;
+        if (!format.mime) continue;
+        if (path.some(c => c.format === format)) continue;
+        queue.push(path.concat({ format, handler }));
+      }
     }
   }
 
-  return await buildConvertPath(file, target, queue);
+  return null;
 
 }
 
