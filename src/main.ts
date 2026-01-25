@@ -279,7 +279,6 @@ async function attemptConvertPath (files: FileData[], path: ConvertPathNode[]) {
   if (cacheLast) files = cacheLast.files;
 
   const start = cacheLast ? convertPathCache.length : 0;
-  if (cacheLast) console.log(`STARTING FROM "${files[0].name}" INDEX ${start}`);
   for (let i = start; i < path.length - 1; i ++) {
     const handler = path[i + 1].handler;
     try {
