@@ -1,8 +1,8 @@
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
-import CommonFormats from "src/CommonFormats.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
+import CommonFormats from "src/CommonFormats";
 import JSZip from "jszip";
 import * as mime from "mime";
-import normalizeMimeType from "../normalizeMimeType.ts";
+import normalizeMimeType from "../normalizeMimeType";
 
 function resolveMime(fmt: string): string {
     const ext = String(fmt ?? "").toLowerCase();

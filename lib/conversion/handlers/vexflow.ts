@@ -1,7 +1,7 @@
 import * as vexml from '@stringsync/vexml';
 import VexFlow from 'vexflow';
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
-import CommonFormats from 'src/CommonFormats.ts';
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
+import CommonFormats from '../CommonFormats';
 import { buildMidi, addNote } from './midi/midifilelib.js';
 
 class VexFlowHandler implements FormatHandler {

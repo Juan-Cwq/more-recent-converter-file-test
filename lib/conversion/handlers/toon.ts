@@ -1,6 +1,6 @@
-import { FormatDefinition } from "../FormatHandler.ts";
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
-import CommonFormats, { Category } from "../CommonFormats.ts";
+import { FormatDefinition } from "../FormatHandler";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
+import CommonFormats, { Category } from "../CommonFormats";
 import { encode, decode } from "@toon-format/toon";
 
 const toonFormat = new FormatDefinition(

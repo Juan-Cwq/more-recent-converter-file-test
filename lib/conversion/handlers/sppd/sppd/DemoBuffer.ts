@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Provides an interface for handling the bitstream formats of a Source engine demo file.
  * @module

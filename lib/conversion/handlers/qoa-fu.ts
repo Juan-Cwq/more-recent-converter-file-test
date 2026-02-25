@@ -1,4 +1,4 @@
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 import { QOAEncoder, QOADecoder, QOABase } from "qoa-fu";
 import { WaveFile } from "wavefile";

@@ -1,7 +1,7 @@
 // file: bunburrows.ts
 
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
-import CommonFormats from "../CommonFormats.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
+import CommonFormats from "../CommonFormats";
 
 const COLOR_WALKABLE = [0,0,0];
 const COLOR_BREAKABLE = [98,135,64];

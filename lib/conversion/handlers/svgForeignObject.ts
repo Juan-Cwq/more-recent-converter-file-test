@@ -1,5 +1,5 @@
-import CommonFormats from "../CommonFormats.ts";
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+import CommonFormats from "../CommonFormats";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 class svgForeignObjectHandler implements FormatHandler {
 

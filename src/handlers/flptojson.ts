@@ -1,9 +1,9 @@
 // file: flptojson.ts
 // npm install ts-flp buffer
 
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 import { Buffer } from "buffer";
-import CommonFormats from "src/CommonFormats.ts";
+import CommonFormats from "src/CommonFormats";
 
 if (typeof window !== "undefined") {
   (window as any).Buffer = Buffer;

@@ -1,8 +1,8 @@
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
-import { LZHDecoder } from "./lzh/decoder.ts";
-import { LZHEncoder, type LHAFileInput } from "./lzh/encoder.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
+import { LZHDecoder } from "./lzh/decoder";
+import { LZHEncoder, type LHAFileInput } from "./lzh/encoder";
 import JSZip from "jszip";
-import normalizeMimeType from "../normalizeMimeType.ts";
+import normalizeMimeType from "../normalizeMimeType";
 import mime from "mime";
 
 /**

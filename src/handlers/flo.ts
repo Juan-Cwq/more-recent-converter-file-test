@@ -1,5 +1,5 @@
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
-import normalizeMimeType from "../normalizeMimeType.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
+import normalizeMimeType from "../normalizeMimeType";
 
 import { FFmpeg } from "@ffmpeg/ffmpeg";
 
@@ -150,7 +150,7 @@ class floHandler implements FormatHandler {
 
   async init() {
     try {
-      this.#worker = new Worker(new URL("./flo.worker.ts", import.meta.url), { type: "module" });
+      this.#worker = new Worker(new URL("./flo.worker", import.meta.url), { type: "module" });
       this.#workerReady = new Promise((resolve, reject) => {
         this.#worker!.onmessage = (ev: MessageEvent) => {
           const m = ev.data as any;

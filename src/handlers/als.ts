@@ -1,4 +1,4 @@
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 class alsHandler implements FormatHandler {
 

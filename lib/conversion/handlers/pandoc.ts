@@ -1,7 +1,7 @@
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 import mime from "mime";
-import normalizeMimeType from "../normalizeMimeType.ts";
+import normalizeMimeType from "../normalizeMimeType";
 
 class pandocHandler implements FormatHandler {
 

@@ -1,7 +1,7 @@
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 import Meyda from "meyda";
-import CommonFormats from "src/CommonFormats.ts";
+import CommonFormats from "src/CommonFormats";
 import { WaveFile } from "wavefile";
 
 class meydaHandler implements FormatHandler {

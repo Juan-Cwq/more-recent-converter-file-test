@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * String tables contain information about the server, its players,
  * default entity properties, precached sounds and models, etc.

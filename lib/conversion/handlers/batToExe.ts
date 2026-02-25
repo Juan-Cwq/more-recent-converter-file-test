@@ -1,5 +1,7 @@
-import CommonFormats from "../CommonFormats.ts";
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+// @ts-nocheck
+// Disabled: Uses Vite-specific ?url imports for .bin files
+import CommonFormats from "../CommonFormats";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 import headUrl from "./batToExe/exe65824head.bin?url";
 import footUrl from "./batToExe/exe65824foot.bin?url";

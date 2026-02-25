@@ -7,9 +7,9 @@ import {
 } from "@imagemagick/magick-wasm";
 
 import mime from "mime";
-import normalizeMimeType from "../normalizeMimeType.ts";
+import normalizeMimeType from "../normalizeMimeType";
 
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 class ImageMagickHandler implements FormatHandler {
 

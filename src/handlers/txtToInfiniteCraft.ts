@@ -1,5 +1,5 @@
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
-import CommonFormats from "src/CommonFormats.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
+import CommonFormats from "src/CommonFormats";
 
 class txtToInfiniteCraftHandler implements FormatHandler {
 

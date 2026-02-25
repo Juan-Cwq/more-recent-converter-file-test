@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Demo } from "./Demo.js";
 
 export enum DataTablePropertyType {

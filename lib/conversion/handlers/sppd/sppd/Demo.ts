@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { DemoBuffer } from "./DemoBuffer.js";
 import { DataTable, ServerClass, ParserClass } from "./DataTable.js";
 import { Entities, StaticBaseline } from "./Entity.js";

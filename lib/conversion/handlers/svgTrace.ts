@@ -1,7 +1,7 @@
 import { imageTracer } from 'imagetracer'
 
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
-import CommonFormats from 'src/CommonFormats.ts';
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
+import CommonFormats from '../CommonFormats';
 
 class svgTraceHandler implements FormatHandler {
 

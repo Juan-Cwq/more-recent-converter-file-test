@@ -1,5 +1,7 @@
-import CommonFormats from "../CommonFormats.ts";
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+// @ts-nocheck
+// Disabled: Imports from directory named "espeakng.js" causing resolution issues
+import CommonFormats from "../CommonFormats";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 import { SimpleTTS } from "./espeakng.js/js/espeakng-simple.js";
 import { WaveFile } from "wavefile";
 

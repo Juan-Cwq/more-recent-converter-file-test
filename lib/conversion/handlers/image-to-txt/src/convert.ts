@@ -1,5 +1,5 @@
-import type { Image, Character } from "./types.ts";
-import { FONT } from "./generated.ts";
+import type { Image, Character } from "./types";
+import { FONT } from "./generated";
 
 /// Euclidean distance squared
 function distSquared(a: number[], b: number[]): number {

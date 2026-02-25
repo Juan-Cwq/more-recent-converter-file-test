@@ -1,5 +1,5 @@
-import CommonFormats, { Category } from "../CommonFormats.ts";
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+import CommonFormats, { Category } from "../CommonFormats";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 // base class for handling renames
 function renameHandler(name: string, formats: FileFormat[]): FormatHandler {

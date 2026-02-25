@@ -1,4 +1,6 @@
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+// @ts-nocheck
+// Disabled: Uses dynamic imports incompatible with Turbopack
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 import { extractEvents, tableToString, stringToTable, buildMidi, parseRtttl, parseGrubTune, tableToRtttl, tableToGrubTune, pngToMidi, midiToPng } from "./midi/midifilelib.js";
 
 const SAMPLE_RATE = 44100;

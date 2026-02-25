@@ -1,6 +1,6 @@
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
-import normalizeMimeType from "../normalizeMimeType.ts";
-import CommonFormats from "src/CommonFormats.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
+import normalizeMimeType from "../normalizeMimeType";
+import CommonFormats from "src/CommonFormats";
 
 const ROM_MAGIC = {
   z64: [0x80, 0x37, 0x12, 0x40],

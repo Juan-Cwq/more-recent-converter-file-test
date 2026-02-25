@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { Vector3, Quaternion, Mesh } from "three";
 
-import * as BSOR from "./replay.ts";
+import * as BSOR from "./replay";
 
 export async function render(replay: BSOR.Replay, width: number, height: number, onFrame: (renderer: THREE.WebGLRenderer) => Promise<void>, onDone: () => Promise<void>) {
 	const scene = new THREE.Scene();

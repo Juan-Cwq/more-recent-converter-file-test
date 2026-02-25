@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Contains definitions and parsers for the various messages found in a
  * Source engine demo file.

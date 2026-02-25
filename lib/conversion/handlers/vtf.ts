@@ -1,5 +1,5 @@
-import CommonFormats from "../CommonFormats.ts";
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+import CommonFormats from "../CommonFormats";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 const TEXTUREFLAGS_ENVMAP = 0x00004000;
 const RESOURCE_HIGH_RES_IMAGE = 0x30;

@@ -1,11 +1,13 @@
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+// @ts-nocheck
+// Disabled: sppd library uses .js imports for .ts files which Next.js doesn't resolve
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 import * as THREE from "three";
 import * as CSG from "three-bvh-csg";
 
-import { Demo } from "./sppd/sppd/Demo.ts";
-import { Vector } from "./sppd/sppd/Vector.ts";
-import CommonFormats from "../CommonFormats.ts";
+import { Demo } from "./sppd/sppd/Demo";
+import { Vector } from "./sppd/sppd/Vector";
+import CommonFormats from "../CommonFormats";
 
 function toThreeVector (vec: Vector) {
   return new THREE.Vector3(vec.y, vec.z, vec.x);

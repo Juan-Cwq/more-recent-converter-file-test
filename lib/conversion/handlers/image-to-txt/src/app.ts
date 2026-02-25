@@ -1,7 +1,7 @@
 //! Simple deno-based app to imageToText an image
 
 import { Image } from "jsr:@cross/image";
-import { imageToText, rgbaToGrayscale } from "./convert.ts";
+import { imageToText, rgbaToGrayscale } from "./convert";
 
 if(Deno.args.length != 1) {
 	console.log("Usage: image-to-txt <image file>");

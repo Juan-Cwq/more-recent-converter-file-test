@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * VScript-like 3D vector implementation.
  */

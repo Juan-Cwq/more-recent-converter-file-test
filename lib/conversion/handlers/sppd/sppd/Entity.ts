@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Demo } from "./Demo.js";
 import { DemoBuffer } from "./DemoBuffer.js";
 import { Vector } from "./Vector.js";

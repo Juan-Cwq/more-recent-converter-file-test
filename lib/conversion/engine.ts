@@ -2,10 +2,10 @@ import type {
   FileData,
   FileFormat,
   FormatHandler,
-} from "./FormatHandler.ts";
-import { ConvertPathNode } from "./FormatHandler.ts";
-import { TraversionGraph } from "./TraversionGraph.ts";
-import normalizeMimeType from "./normalizeMimeType.ts";
+} from "./FormatHandler";
+import { ConvertPathNode } from "./FormatHandler";
+import { TraversionGraph } from "./TraversionGraph";
+import normalizeMimeType from "./normalizeMimeType";
 
 export interface ConversionEngine {
   handlers: FormatHandler[];
@@ -32,7 +32,7 @@ export async function getEngine(): Promise<ConversionEngine> {
 }
 
 async function initializeEngine(): Promise<ConversionEngine> {
-  const handlersModule = await import("./handlers/index.ts");
+  const handlersModule = await import("./handlers/index");
   const handlers: FormatHandler[] = handlersModule.default;
 
   const supportedFormatCache = new Map<string, FileFormat[]>();

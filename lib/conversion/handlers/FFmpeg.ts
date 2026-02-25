@@ -1,11 +1,11 @@
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 import { FFmpeg } from "@ffmpeg/ffmpeg";
 import type { LogEvent } from "@ffmpeg/ffmpeg";
 
 import mime from "mime";
-import normalizeMimeType from "../normalizeMimeType.ts";
-import CommonFormats from "../CommonFormats.ts";
+import normalizeMimeType from "../normalizeMimeType";
+import CommonFormats from "../CommonFormats";
 
 class FFmpegHandler implements FormatHandler {
 

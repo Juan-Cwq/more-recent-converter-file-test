@@ -1,5 +1,5 @@
-import CommonFormats from "../CommonFormats.ts";
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+import CommonFormats from "../CommonFormats";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";

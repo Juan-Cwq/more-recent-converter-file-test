@@ -1,7 +1,7 @@
 // file: curani.ts
 
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
-import CommonFormats from "../CommonFormats.ts";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
+import CommonFormats from "../CommonFormats";
 
 class curaniHandler implements FormatHandler {
 

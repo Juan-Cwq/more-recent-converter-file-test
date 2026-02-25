@@ -1,5 +1,5 @@
-import CommonFormats from "src/CommonFormats.ts";
-import type { FileData, FileFormat, FormatHandler } from "../FormatHandler.ts";
+import CommonFormats from "src/CommonFormats";
+import type { FileData, FileFormat, FormatHandler } from "../FormatHandler";
 
 class batchHandler implements FormatHandler {
   public name = "batch";

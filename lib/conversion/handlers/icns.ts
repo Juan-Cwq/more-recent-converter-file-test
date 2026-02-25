@@ -1,5 +1,5 @@
-import CommonFormats from "../CommonFormats.ts";
-import { FormatDefinition, type FileData, type FileFormat, type FormatHandler } from "../FormatHandler.ts";
+import CommonFormats from "../CommonFormats";
+import { FormatDefinition, type FileData, type FileFormat, type FormatHandler } from "../FormatHandler";
 
 const PNG_SIGNATURE = new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]);
 const ICNS_MAGIC = "icns";
